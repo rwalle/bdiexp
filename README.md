@@ -62,7 +62,7 @@ A class that serves as the interface for controlling lab instruments.
 The sequence for an experiment is described in `experiment_plan.py`. All experiment plan class should inherit the `ExpPlan` base class. Class structure:
 
 ```Python
-class NewExperimentPlan:
+class ExpPlan:
     tasks # list of tuples
     current_task # int
     completed # boolean
@@ -72,8 +72,9 @@ class NewExperimentPlan:
     next_iteration()
 ```
 
-* `next_iteration`: Save new tasks to the `tasks` variable. The "BDI worker" will run the tasks in this variable sequentially.
-* `next_task()`: run the next task and increase `current_task` index by 1.
+`next_iteration()` is an abstract method. It runs every time a new iteration starts. It is supposed to check if the experiment should end, or otherwise save new tasks to the `tasks` variable. The "BDI worker" will run the tasks in this variable sequentially.
+
+Calling `next_task()` will run the next task and increase `current_task` index by 1.
 
 Tasks are lists of tuples of three elements:
 
