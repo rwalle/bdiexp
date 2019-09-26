@@ -63,10 +63,10 @@ The sequence for an experiment is described in `experiment_plan.py`. All experim
 
 ```Python
 class NewExperimentPlan:
-	tasks -> list of tuples
-    current_task -> int
-    completed -> boolean
-	__init__()
+    tasks # list of tuples
+    current_task # int
+    completed # boolean
+    __init__()
     get_current_task()
     next_task()
     next_iteration()
