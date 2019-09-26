@@ -1,0 +1,38 @@
+{
+  "AOI": {
+    "FP_CAM": {
+      "WIDTH": 800,
+      "HEIGHT": 800,
+      "OFFSET_X": 192,
+      "OFFSET_Y": 253
+    },
+    "FP_CROP_CPU": {
+      "OFFSET_X": 80,
+      "OFFSET_Y": 480,
+      "SIZE_X": 200,
+      "SIZE_Y": 200
+    },
+    "FP_CROP_GPU": {
+      "OFFSET_X": 0,
+      "OFFSET_Y": 0,
+      "SIZE_X": 0,
+      "SIZE_Y": 0
+    },
+    "IP_CAM": {
+      "WIDTH": 200,
+      "HEIGHT": 200,
+      "OFFSET_X": 200,
+      "OFFSET_Y": 480
+    }
+  },
+  "GAUSSIAN_BLUR": 1,
+  "CAPTURE_SETTINGS": {
+    "BG_FRAME": 100,
+    "HOLOG_FRAME": 2500,
+    "FPS": 25,
+    "START_WAIT": 5,
+    "Z_WAIT": 5,
+    "SAVE_DIR": "D:\\data\\raw"
+
+  }
+}
